@@ -1,6 +1,133 @@
 Name: UI
 Type: UICategoryFolder
 Children:
+- Name: WebPresentationEngine
+  Type: ns=8;PresentationEngine
+  Children:
+  - Name: Protocol
+    Type: BaseDataVariableType
+    DataType: Protocol
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "10.6.10.20"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 100
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/AAA_2024_Optix/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/AAA_2024_Optix/UI/ISAStyleSheet1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Users/Anonymous"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: IsNative
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IsWeb
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IpAddress
+        Type: BaseDataVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: StyleSheet
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+      - Name: User
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+      - Name: ActualLocaleId
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualLanguage
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualMeasurementSystem
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+      - Name: TimeZoneOffset
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+      - Name: Groups
+        Type: BaseObjectType
+      - Name: Roles
+        Type: BaseObjectType
+      - Name: Rights
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=303
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Type: BaseVariableType
+        DataType: Boolean
+        AccessLevel: Read
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 3
 - Name: DefaultStyleSheet
   Type: StyleSheet
   Children:
@@ -847,7 +974,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1350.0
+    Value: 1370.0
   - Name: Height
     Type: BaseDataVariableType
     DataType: Size
@@ -861,7 +988,7 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/AAA_2024_Optix@BrowseName"
-  - Name: Rectangle1
+  - Name: Banner
     Type: Rectangle
     Children:
     - Name: Width
@@ -873,7 +1000,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
+      Value: 150.0
     - Name: BorderThickness
       Type: BaseDataVariableType
       DataType: Size
@@ -903,6 +1030,60 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#b3b3b3"
+    - Name: Rockwell_Logo
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/Rockwell_Automation_Logo.png"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 630.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+    - Name: Actemium_Logo
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/actemium-tours.png"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 690.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 240.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 660.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
   - Name: NavigationPanel1
     Type: NavigationPanel
     Children:
@@ -975,7 +1156,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
+      Value: 150.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -987,130 +1168,4 @@ Children:
       ModellingRule: Optional
       Value: 3
 - File: Screens/Screens.yaml
-- Name: WebPresentationEngine
-  Type: ns=8;PresentationEngine
-  Children:
-  - Name: Protocol
-    Type: BaseDataVariableType
-    DataType: Protocol
-  - Name: IPAddress
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "192.168.1.128"
-  - Name: Port
-    Type: BaseDataVariableType
-    DataType: UInt16
-    Value: 100
-  - Name: StartWindow
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/AAA_2024_Optix/UI/MainWindow"
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
-  - Name: StyleSheet
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/AAA_2024_Optix/UI/ISAStyleSheet1"
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
-  - Name: StartingUser
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/Users/Anonymous"
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
-  - Name: Sessions
-    Type: BaseObjectType
-    Children:
-    - Name: Session1
-      Type: UISession
-      Children:
-      - Name: IsInteractive
-        Type: BaseDataVariableType
-        DataType: Boolean
-        AccessLevel: Read
-        Value: true
-      - Name: IsNative
-        Type: BaseDataVariableType
-        DataType: Boolean
-        AccessLevel: Read
-      - Name: IsWeb
-        Type: BaseDataVariableType
-        DataType: Boolean
-        AccessLevel: Read
-      - Name: IpAddress
-        Type: BaseDataVariableType
-        DataType: String
-        AccessLevel: Read
-      - Name: StyleSheet
-        Type: NodePointer
-        DataType: NodeId
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
-      - Name: User
-        Type: NodePointer
-        DataType: NodeId
-        AccessLevel: Read
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/ObjectTypes/BaseObjectType/UserType"
-      - Name: ActualLocaleId
-        Type: BaseVariableType
-        DataType: LocaleId
-        ReferenceType: HasProperty
-      - Name: ActualLanguage
-        Type: BaseVariableType
-        DataType: LocaleId
-        ReferenceType: HasProperty
-      - Name: ActualMeasurementSystem
-        Type: BaseVariableType
-        DataType: MeasurementSystem
-        ReferenceType: HasProperty
-      - Name: TimeZoneOffset
-        Type: BaseVariableType
-        DataType: TimeZoneDataType
-        ReferenceType: HasProperty
-        AccessLevel: Read
-      - Name: Groups
-        Type: BaseObjectType
-      - Name: Roles
-        Type: BaseObjectType
-      - Name: Rights
-        Type: BaseObjectType
-      - Class: Reference
-        Target: ns=1;i=146
-        Direction: Forward
-      - Class: Reference
-        Target: ns=1;i=266
-        Direction: Forward
-      - Class: Reference
-        Target: ns=1;i=269
-        Direction: Forward
-      - Class: Reference
-        Target: ns=1;i=303
-        Direction: Forward
-      - Class: Reference
-        Target: ns=1;i=272
-        Direction: Forward
-      - Name: LoggedIn
-        Type: BaseVariableType
-        DataType: Boolean
-        AccessLevel: Read
-  - Name: MaxNumberOfConnections
-    Type: BaseDataVariableType
-    DataType: UInt32
-    Value: 3
+- File: Power_Device_Library/Power_Device_Library.yaml

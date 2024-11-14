@@ -1,0 +1,4 @@
+Name: Power Device Library
+Type: FolderType
+Children:
+- File: PowerFlex_525/PowerFlex_525.yaml
