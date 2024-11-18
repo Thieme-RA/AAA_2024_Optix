@@ -59,16 +59,32 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
+  20:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 6.3
+  21:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 2.2
+  22:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 3.0
+  23:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 3.0
  Statistics:
-  TotalNodeCount: 6297
-  Objects: 1317
+  TotalNodeCount: 6327
+  Objects: 1324
   ObjectTypes: 29
-  Variables: 4949
+  Variables: 4972
   VariableTypes: 0
   DataTypes: 0
   Methods: 2
-  References: 34
+  References: 40
   ReferenceTypes: 0
-  Files: 28
+  Files: 33
  Nodes:
  - File: Nodes/AAA_2024_Optix.yaml
