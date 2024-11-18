@@ -454,7 +454,7 @@ Children:
     - Name: Ref_Tag
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: "/Objects/AAA_2024_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/PF525_FP"
+      Value: {"IdType":2,"Id":"bb52d03a2dbc58ccbceb2483e161073b","Namespace":7}
     - Name: Cfg_Label
       Type: BaseDataVariableType
       DataType: LocalizedText

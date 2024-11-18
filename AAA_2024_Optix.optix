@@ -31,26 +31,10 @@ Project:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI
    Version: 1.2
-  9:
-   Uri: 'urn:FTOptix:RAEtherNetIP'
-   Module: FTOptix.RAEtherNetIP
-   Version: 6.3
-  10:
-   Uri: 'urn:FTOptix:CommunicationDriver'
-   Module: FTOptix.CommunicationDriver
-   Version: 3.0
   11:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
    Version: 2.0
-  12:
-   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
-   Module: FTOptix.RAEtherNetIP.Net
-   Version: 2.2
-  13:
-   Uri: 'urn:FTOptix:CommunicationDriver:Net'
-   Module: FTOptix.CommunicationDriver.Net
-   Version: 3.0
   14:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
@@ -76,15 +60,15 @@ Project:
    Module: FTOptix.NetLogic
    Version: 4.0
  Statistics:
-  TotalNodeCount: 6524
-  Objects: 1326
+  TotalNodeCount: 6297
+  Objects: 1317
   ObjectTypes: 29
-  Variables: 5165
-  VariableTypes: 1
-  DataTypes: 1
+  Variables: 4949
+  VariableTypes: 0
+  DataTypes: 0
   Methods: 2
-  References: 40
+  References: 34
   ReferenceTypes: 0
-  Files: 34
+  Files: 28
  Nodes:
  - File: Nodes/AAA_2024_Optix.yaml
