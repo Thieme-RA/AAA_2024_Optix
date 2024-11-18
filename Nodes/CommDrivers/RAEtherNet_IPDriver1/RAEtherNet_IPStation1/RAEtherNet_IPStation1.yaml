@@ -121,3 +121,6 @@ Children:
   Children:
   - File: DataTypes/DataTypes.yaml
   - File: VariableTypes/VariableTypes.yaml
+- Name: EnableExtendedProperties
+  Type: BaseDataVariableType
+  DataType: Boolean
