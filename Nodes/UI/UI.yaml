@@ -353,7 +353,7 @@ Children:
   - Name: WindowColor
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#e0e0e0"
+    Value: "#f0f0f0"
   - Name: InteractiveDropShadowSize
     Type: BaseDataVariableType
     DataType: Size
@@ -1099,7 +1099,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/AAA_2024_Optix/UI/Screens/Screen1"
+          Value: "/Objects/AAA_2024_Optix/UI/Screens/Pagina1"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1114,7 +1114,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/AAA_2024_Optix/UI/Screens/Screen2"
+          Value: "/Objects/AAA_2024_Optix/UI/Screens/Pagina2"
           Children:
           - Name: Kind
             Type: PropertyType
