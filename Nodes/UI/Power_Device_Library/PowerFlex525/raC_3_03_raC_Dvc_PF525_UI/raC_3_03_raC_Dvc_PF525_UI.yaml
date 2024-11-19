@@ -231,7 +231,7 @@ Children:
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Home"
+                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Home"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -251,7 +251,7 @@ Children:
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Trend"
+                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Trend"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -271,7 +271,7 @@ Children:
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Diagnostics"
+                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Diagnostics"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -291,7 +291,7 @@ Children:
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Fault"
+                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Fault"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -311,7 +311,7 @@ Children:
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Extensions"
+                Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/Panels-Faceplate/raC_3_03_raC_Dvc_PF525_Extensions"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -349,7 +349,7 @@ Children:
   - Name: Cfg_HelpPanel
     Type: BaseDataVariableType
     DataType: NodeId
-    Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex 525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/raC_3_03_raC_Dvc_PF525_Help"
+    Value: "/Objects/AAA_2024_Optix/UI/Power Device Library/PowerFlex525/raC_3_03_raC_Dvc_PF525_UI/<PrivateElements>/raC_3_03_raC_Dvc_PF525_Help"
   - Name: HelpScreen
     Type: Screen
     Children:

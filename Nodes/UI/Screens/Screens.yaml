@@ -11,6 +11,29 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 800.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Aansturing Frequentieregelaar"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 172.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
   - Name: PF525GraphicalButton1
     Type: raC_3_03_raC_Dvc_PF525_GS_NavGraphical
     Children:
@@ -454,7 +477,7 @@ Children:
     - Name: Ref_Tag
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"bb52d03a2dbc58ccbceb2483e161073b","Namespace":7}
+      Value: "/Objects/AAA_2024_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/PF525_FacePlate"
     - Name: Cfg_Label
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -463,35 +486,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 375.0
+      Value: 380.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 235.0
-  - Name: Label1
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Aansturing Frequentieregelaar"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 170.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 172.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 40.0
+      Value: 230.0
 - Name: Pagina2
   Id: g=5c566034659aadac7740ee719422288e
   Supertype: Screen
@@ -749,23 +749,3 @@ Children:
     - Name: Visible
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: true
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "{0}"
-        - Name: ns=2;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Switch2/Checked"
