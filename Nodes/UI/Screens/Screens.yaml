@@ -477,7 +477,6 @@ Children:
     - Name: Ref_Tag
       Type: BaseDataVariableType
       DataType: NodeId
-      Value: "/Objects/AAA_2024_Optix/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/PF525_FacePlate"
     - Name: Cfg_Label
       Type: BaseDataVariableType
       DataType: LocalizedText
